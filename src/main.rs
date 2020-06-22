@@ -60,8 +60,8 @@ fn handle_connection(mut stream: TcpStream) {
     let content = match fs::read_to_string(&request_file) {
         Ok(file) => file,
         Err(_) => {
-            println!("cannot find file: {}", request_file);
-            String::from("Cannot find file")
+            println!("cannot find file: {} 🤔️", request_file);
+            fs::read_to_string("./404/index.html").expect("Whoops! Can't even find 404 page 🙄️!")
         }
     };
 
