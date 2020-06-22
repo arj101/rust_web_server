@@ -12,8 +12,7 @@
   "keywords": [
     "rust",
     "server",
-    "http-server",
-    "rust-web-server"
+    "http-server"
   ],
   "author": "arduino_explorer",
   "license": "ISC",
