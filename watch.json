@@ -1,0 +1,10 @@
+{
+  "install": {
+    "include": ["^package\\.json$", "^cargo\\.toml$", "^\\.env$"]
+  },
+  "restart": {
+    "exclude": ["^target/"],
+    "include": ["\\.js$", "\\.rs", "\\.json", "\\.toml", "\\.html", "\\.css"]
+  },
+  "throttle": 1000
+}

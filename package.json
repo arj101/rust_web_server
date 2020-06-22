@@ -1,0 +1,23 @@
+{
+  "name": "web_server",
+  "version": "0.0.1",
+  "description": "a simple web server using rust-lang",
+  "scripts": {
+    "start": "cargo run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arj101/rust_web_server.git"
+  },
+  "keywords": [
+    "rust",
+    "server",
+    "http-server"
+  ],
+  "author": "arduino_explorer",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arj101/rust_web_server/issues"
+  },
+  "homepage": "https://github.com/arj101/rust_web_server#readme"
+}

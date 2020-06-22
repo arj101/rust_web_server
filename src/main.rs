@@ -1,3 +1,4 @@
+use std::env;
 use std::fs;
 use std::io::prelude::*;
 use std::net::TcpListener;
@@ -25,7 +26,18 @@ impl Request {
 }
 
 fn main() {
-    let listener = TcpListener::bind("127.0.0.1:7878").unwrap();
+    let port = match env::var("PORT") {
+        Ok(port) => {
+            println!("🎉️ Found PORT env var!.  value of port: {}", &port);
+            port
+        }
+        Err(_) => {
+            println!("Cannot find env var PORT, defaulting to 7878 😜️.");
+            String::from("7878")
+        }
+    };
+
+    let listener = TcpListener::bind(format!("127.0.0.1:{}", port)).unwrap();
 
     for stream in listener.incoming() {
         let stream = stream.unwrap();
