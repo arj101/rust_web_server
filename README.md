@@ -1,5 +1,3 @@
-# Rust Server 😀️
-
-### A simple web server using Rust-lang, no server crates used 😜️!
+### A simple web server in Rust
 
 https://diode-rust-server.glitch.me/
